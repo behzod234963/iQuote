@@ -1,9 +1,7 @@
 package com.coder.behzod.iquotes.di
 
-import android.content.Context
-import android.view.View
-import com.coder.behzod.iquotes.view.MainView
-import com.coder.behzod.iquotes.view.MainViewImpl
+import com.coder.behzod.iquotes.view.main.MainView
+import com.coder.behzod.iquotes.view.main.MainViewImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,8 +10,9 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class MainModule{
+class ViewModule {
+
     @Singleton
     @Provides
-    fun provideMainViewImpl(): MainView = MainViewImpl()
+    fun provideMainView(): MainView = MainViewImpl()
 }

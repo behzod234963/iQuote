@@ -1,14 +1,16 @@
-package com.coder.behzod.iquotes.view.acitivity
+package com.coder.behzod.iquotes.ui.acitivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.coder.behzod.iquotes.R
 import com.coder.behzod.iquotes.databinding.ActivityMainBinding
-import com.coder.behzod.iquotes.view.fragments.FragmentFavorite
-import com.coder.behzod.iquotes.view.fragments.FragmentMain
-import com.coder.behzod.iquotes.view.fragments.SplashFragment
+import com.coder.behzod.iquotes.ui.fragments.FragmentFavorite
+import com.coder.behzod.iquotes.ui.fragments.FragmentMain
+import com.coder.behzod.iquotes.ui.fragments.SplashFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding:ActivityMainBinding
